@@ -60,11 +60,6 @@ module.exports.createBrickStorageService = (archiveConfigurator, keySSI) => {
                 brick.getRawData(callback);
             }
 
-            if (refreshInProgress) {
-                return waitIfDSUIsRefreshing(() => {
-                    extractData();
-                })
-            }
             extractData();
         },
 
