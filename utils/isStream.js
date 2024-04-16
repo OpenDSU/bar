@@ -1,4 +1,4 @@
-function isStream(stream){
+function isStream(stream) {
     return stream !== null && typeof stream === 'object' && typeof stream.pipe === 'function';
 }
 
@@ -17,7 +17,7 @@ function isReadable(stream) {
         typeof stream._readableState === 'object';
 }
 
-function isDuplex(stream){
+function isDuplex(stream) {
     return isWritable(stream) &&
         isReadable(stream);
 }

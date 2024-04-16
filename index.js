@@ -1,4 +1,3 @@
-
 const ArchiveConfigurator = require("./lib/ArchiveConfigurator");
 const createFolderBrickStorage = require("./lib/obsolete/FolderBrickStorage").createFolderBrickStorage;
 const createFileBrickStorage = require("./lib/obsolete/FileBrickStorage").createFileBrickStorage;
